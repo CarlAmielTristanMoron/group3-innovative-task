@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:innovative_task1/Home_Pages/O%C3%B1ate_Files/o%C3%B1ate_tab_bar.dart';
+import 'package:innovative_task1/Home_Pages/O%C3%B1ate_Files/o%C3%B1ate_tab_bar_view.dart';
 import '../Images/images.dart';
 import 'Moron_Files/moron_tab_bar.dart';
 import 'Moron_Files/moron_tab_bar_view.dart';
@@ -140,13 +142,15 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           isScrollable: true,
           tabs: const [
             MoronTabBar(),
+            OnateTabBar(),
           ]
         ),
       ),
       body: TabBarView(
         controller: controller,
         children: const [
-          MoronTabBarView()
+          MoronTabBarView(),
+          OnateTabBarView(),
         ]
       ),
     );

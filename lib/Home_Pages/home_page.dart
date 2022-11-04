@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:innovative_task1/Home_Pages/O%C3%B1ate_Files/o%C3%B1ate_tab_bar.dart';
 import 'package:innovative_task1/Home_Pages/O%C3%B1ate_Files/o%C3%B1ate_tab_bar_view.dart';
+import 'package:innovative_task1/Home_Pages/Pacheo_Files/pacheo_tab_bar.dart';
+import 'package:innovative_task1/Home_Pages/Pacheo_Files/pacheo_tab_bar_view.dart';
 import 'package:innovative_task1/Home_Pages/Ronolo_Files/ronolo_tab_bar.dart';
 import 'package:innovative_task1/Home_Pages/Ronolo_Files/ronolo_tab_bar_view.dart';
 import 'package:innovative_task1/Home_Pages/Vaguchay_Files/vaguchay_tab_bar.dart';
@@ -152,6 +154,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             RonoloTabBar(),
             VaguchayTabBar(),
             NacarioTabBar(),
+            PacheoTabBar(),
 
           ]
         ),
@@ -164,6 +167,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           RonoloTabBarView(),
           VaguchayTabBarView(),
           NacarioTabBarView(),
+          PacheoTabBarView(),
         ]
       ),
     );

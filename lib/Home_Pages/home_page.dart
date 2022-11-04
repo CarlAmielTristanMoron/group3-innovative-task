@@ -8,6 +8,8 @@ import 'package:innovative_task1/Home_Pages/Vaguchay_Files/vaguchay_tab_bar_view
 import '../Images/images.dart';
 import 'Moron_Files/moron_tab_bar.dart';
 import 'Moron_Files/moron_tab_bar_view.dart';
+import 'Nacario_files/nacario_tab_bar.dart';
+import 'Nacario_files/nacario_tab_bar_view.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -149,6 +151,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             OnateTabBar(),
             RonoloTabBar(),
             VaguchayTabBar(),
+            NacarioTabBar(),
+
           ]
         ),
       ),
@@ -159,6 +163,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           OnateTabBarView(),
           RonoloTabBarView(),
           VaguchayTabBarView(),
+          NacarioTabBarView(),
         ]
       ),
     );

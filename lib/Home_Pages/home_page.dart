@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:innovative_task1/Home_Pages/Montefalcon_Files/montefalcon_tab_bar.dart';
+import 'package:innovative_task1/Home_Pages/Montefalcon_Files/montefalcon_tab_bar_view.dart';
 import 'package:innovative_task1/Home_Pages/O%C3%B1ate_Files/o%C3%B1ate_tab_bar.dart';
 import 'package:innovative_task1/Home_Pages/O%C3%B1ate_Files/o%C3%B1ate_tab_bar_view.dart';
 import 'package:innovative_task1/Home_Pages/Pacheo_Files/pacheo_tab_bar.dart';
@@ -22,7 +24,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
 
-  late TabController controller = TabController(length: 8, vsync: this);
+  late TabController controller = TabController(length: 7, vsync: this);
 
   @override
   Widget build(BuildContext context) {
@@ -155,6 +157,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             VaguchayTabBar(),
             NacarioTabBar(),
             PacheoTabBar(),
+            MontefalconTabBar(),
 
           ]
         ),
@@ -168,6 +171,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           VaguchayTabBarView(),
           NacarioTabBarView(),
           PacheoTabBarView(),
+          MontefalconTabBarView(),
         ]
       ),
     );

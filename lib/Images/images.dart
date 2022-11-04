@@ -34,4 +34,9 @@ class Images {
   static const grandmotherPacheoProfile = '${asset}GrandmotherPacheo.png';
   static const motherPacheoProfile = '${asset}MotherPacheo.png';
 
+  static const montefalconProfile = '${asset}Meinardz.png';
+  static const fatherMontefalconProfile = '${asset}FatherMontefalcon.png';
+  static const motherMontefalconProfile = '${asset}MotherMontefalcon.png';
+
+
 }

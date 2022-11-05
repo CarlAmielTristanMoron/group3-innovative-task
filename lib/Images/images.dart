@@ -38,5 +38,9 @@ class Images {
   static const fatherMontefalconProfile = '${asset}FatherMontefalcon.png';
   static const motherMontefalconProfile = '${asset}MotherMontefalcon.png';
 
+  static const kateLaderaProfile = '${asset}KateLadera.png';
+  static const motherLaderaProfile = '${asset}MotherLadera.png';
+  static const fatherLaderaProfile = '${asset}FatherLadera.png';
+  static const brotherLaderaProfile = '${asset}BrotherLadera.png';
 
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:innovative_task1/Home_Pages/Ladera_Files/ladera_tab_bar.dart';
+import 'package:innovative_task1/Home_Pages/Ladera_Files/ladera_tab_bar_view.dart';
 import 'package:innovative_task1/Home_Pages/Montefalcon_Files/montefalcon_tab_bar.dart';
 import 'package:innovative_task1/Home_Pages/Montefalcon_Files/montefalcon_tab_bar_view.dart';
 import 'package:innovative_task1/Home_Pages/O%C3%B1ate_Files/o%C3%B1ate_tab_bar.dart';
@@ -24,7 +26,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
 
-  late TabController controller = TabController(length: 7, vsync: this);
+  late TabController controller = TabController(length: 8, vsync: this);
 
   @override
   Widget build(BuildContext context) {
@@ -47,9 +49,10 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                 ),
                 accountName: Text('Innovative Task',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold),
+                    fontWeight: FontWeight.bold
+                  ),
                 ),
-                accountEmail: Text('Group3@gmail.com',
+                accountEmail: Text('Group3@mobileprogramming.com',
                   style: TextStyle(
                     fontWeight: FontWeight.bold
                   ),
@@ -100,9 +103,9 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                   Icons.local_play,
                   color: Colors.black,
                 ),
-                applicationName: 'My Cool App',
+                applicationName: 'Group 3 Profile',
                 applicationVersion: '1.0.25',
-                applicationLegalese: '© 2019 Company',
+                applicationLegalese: '© 2022 Group3',
                 child: Text('About',
                   style: TextStyle(
                     color: Colors.black
@@ -158,7 +161,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             NacarioTabBar(),
             PacheoTabBar(),
             MontefalconTabBar(),
-
+            LaderaTabBar()
           ]
         ),
       ),
@@ -172,6 +175,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           NacarioTabBarView(),
           PacheoTabBarView(),
           MontefalconTabBarView(),
+          LaderaTabBarView()
         ]
       ),
     );
